@@ -36,6 +36,7 @@ angleOpen += 105
 angleClosed += 135
 pins.servoWritePin(AnalogPin.P15, angleOpen)
 control.inBackground(function () {
+    music.play(music.stringPlayable("- - - - - - - - ", 120), music.PlaybackMode.UntilDone)
     strip = neopixel.create(DigitalPin.P1, 8, NeoPixelMode.RGB)
     strip.clear()
     strip.setBrightness(32)
