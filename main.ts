@@ -30,6 +30,7 @@ let strip: neopixel.Strip = null
 let angleClosed = 0
 let angleOpen = 0
 let speed = 0
+pins.digitalWritePin(DigitalPin.P9, 1)
 radio.setGroup(2)
 speed = 100
 angleOpen += 105
